@@ -3,14 +3,13 @@
     box-sizing: border-box;
     margin: 0;
 }
-
 body{
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fefcea+0,f1da36+100;Gold+3D */
-background: #fefcea; /* Old browsers */
-background: -moz-linear-gradient(top,  #fefcea 0%, #f1da36 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #fefcea 0%,#f1da36 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #fefcea 0%,#f1da36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#333333+0,000000+100;Black+3D */
+    background: #333; /* Old browsers */
+    background: -moz-linear-gradient(top,  #333333 0%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #333333 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #333333 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 
 .conteiner {
@@ -23,13 +22,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
       "nav"
       "portadas"
       "footerr"; 
-  }
-  .topp { 
+}
+
+.topp { 
     grid-area: topp; 
 }
+
 .nav{
     grid-area: nav;
 }
+
 .menu{
     width: 100%;
     background-color: rgb(98, 102, 47);
@@ -47,7 +49,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
 .menu li a {
     padding: 2px;
     margin: 5px;
-    color:beige;
+    color: beige;
     text-decoration: none;
     display: inline-block;    
 }
@@ -80,6 +82,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
     text-align: center;
     animation: logo 3s ease;
 }
+
 @keyframes logo {
     0% {
     opacity: 0;}
@@ -91,6 +94,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
 
 #tit1{
     animation: tituloprincipal 5s ease;
+    color: beige;
 }
 
 @keyframes tituloprincipal {
@@ -101,9 +105,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
     100% {
     opacity: 1;}
 }
+
 #tit2{
     animation: titulosecundario 7s ease;
+    color: azure;
 }
+
 @keyframes titulosecundario {
     0%{
         opacity: 0;
@@ -114,6 +121,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
         opacity: 1;
     }
 }
+
 .logo{
     width: 150px;
 }
@@ -122,10 +130,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
-#aboutus{
 
+#aboutus{
     margin-top: 2cm;
     width: 55% ;
     margin-bottom: 2cm;
@@ -133,38 +140,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
     font-weight: bolder;
     text-align: justify;
 }
+
 #somos {
     width: fit-content;
-    background-color: rgb(225, 228, 41);
+    background-color: rgb(211, 214, 193);
     margin: 10 auto;
     text-align: center;
 }
 
-
-h1 {color: rgb(2, 2, 1);
+h1 {
+    color: rgb(247, 247, 239);
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
     font-family: 'Lobster', cursive;   
 }
 
-h2{ text-align: center ;
+h2 {
+    text-align: center ;
     font-size: 2rem;
     font-style: italic;
-    color: rgb(235, 190, 67);
-    font-family: 'Fira Sans Extra Condensed', sans-serif
+    color: rgb(233, 206, 132);
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
 
 h3{
     font-size: 2rem;
     font-family: 'Lobster', cursive;
     width: 40%;
-    color: rgb(133, 102, 19);
+    color: rgb(233, 206, 132);
     text-decoration: underline;
 }
 
 p{
     font-family: 'Fira Sans Extra Condensed', sans-serif;
+    color: beige;
 }
 
 .botonarriba {
@@ -214,6 +224,7 @@ p{
     text-align: center;
     left: 900;
 }
+
 .redessociales img{
     width: 30
 }
@@ -225,7 +236,7 @@ p{
 
 #titulo1{
     width: fit-content;
-    background-color: rgb(225, 228, 41);
+    background-color: rgb(211, 214, 193);
     margin: 10 auto;
     text-align: center;
 }
@@ -236,7 +247,7 @@ p{
     margin:10 auto;
     border: solid black 2px;
     text-align: center;
-    background-color: rgb(225, 228, 41);
+    background-color:rgb(211, 214, 193);
     display: grid;
     row-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
@@ -246,73 +257,88 @@ p{
     "obra21 obra22 obra23"
     "obra31 obra32 obra33"
     "obra41 obra42 obra43"
-    "obra51 obra52 obra53"  
+    "obra51 obra52 obra53";  
 }
 
 .obra11{
     grid-area: obra11;
-    background-color: rgb(219, 250, 215); 
+    background-color: rgb(14, 80, 6); 
 }
+
 .obra12{
     grid-area: obra12;
-    background-color: rgb(219, 250, 215);
+    background-color: rgb(14, 80, 6); 
 }
+
 .obra13{
     grid-area: obra13;
-    background-color: rgb(219, 250, 215);
+    background-color: rgb(14, 80, 6); 
 }
+
 .obra21{
     grid-area: obra21;
-    background-color: rgb(219, 250, 215);
+    background-color:  rgb(14, 80, 6); 
 }
+
 .obra22{
     grid-area: obra22;
-    background-color: rgb(219, 250, 215);
+    background-color:  rgb(14, 80, 6); 
 }
+
 .obra23{
     grid-area: obra23;
-    background-color: rgb(219, 250, 215);
+    background-color:  rgb(14, 80, 6); 
 }
+
 .obra31{
     grid-area: obra31;
-    background-color: rgb(219, 250, 215);
+    background-color:  rgb(14, 80, 6); 
 }
+
 .obra32{
     grid-area: obra32;
-    background-color: rgb(219, 250, 215);
+    background-color:  rgb(14, 80, 6); 
 }
+
 .obra33{
     grid-area: obra33;
-    background-color: rgb(219, 250, 215);
+    background-color:  rgb(14, 80, 6); 
 }
+
 .obra41{
     grid-area: obra41;
-    background-color: rgb(219, 250, 215);
+    background-color:  rgb(14, 80, 6); 
 }
+
 .obra42{
     grid-area: obra42;
-    background-color: rgb(219, 250, 215);
+    background-color:  rgb(14, 80, 6); 
 }
+
 .obra43{
     grid-area: obra43;
-    background-color: rgb(219, 250, 215);
+    background-color:  rgb(14, 80, 6); 
 }
+
 .obra51{
     grid-area: obra51;
-    background-color: rgb(219, 250, 215);
+    background-color: rgb(14, 80, 6); 
 }
+
 .obra52{
     grid-area: obra52;
-    background-color: rgb(219, 250, 215);
+    background-color:  rgb(14, 80, 6); 
 }
+
 .obra53{
     grid-area: obra53;
-    background-color: rgb(219, 250, 215);
+    background-color:  rgb(14, 80, 6); 
 }
+
 .serv{
     width: auto;
     height: auto;
-    background-color: rgb(225, 228, 41);
+    background-color: rgb(104, 105, 17);
     margin: 10 auto;
     display: grid;
     gap: 2px;
@@ -330,6 +356,7 @@ p{
     font-size: 1.2rem;
     padding: 1rem;
 }
+
 .obra{
     font-size: 1.2rem;
     padding: 1rem;
@@ -341,51 +368,54 @@ p{
     height: 400px;
     padding: 3rem;
 }
+
 .imagenchica:hover{
     transform: scale(1.2,1.2);
     transition: all 2s;
 }
-#planos
-{
+
+#planos{
     grid-area: planos;
     margin: 1rem;
-    background-color: rgb(219, 250, 215);
+    background-color:  rgb(14, 80, 6); 
     text-align: center;
 }
 
 #supervision{
     grid-area: supervision;
     margin: 1rem;
-    background-color: rgb(219, 250, 215);
+    background-color:  rgb(14, 80, 6); 
     text-align: center;
 }
 
 #instalacionagua{
     grid-area: instalacionagua;
     margin: 1rem;
-    background-color: rgb(219, 250, 215);
+    background-color:  rgb(14, 80, 6); 
     text-align: center;
 }
 
 #instalaciongas{
     grid-area: instalaciongas;
     margin: 1rem;
-    background-color: rgb(219, 250, 215);
+    background-color:  rgb(14, 80, 6); 
     text-align: center;
 }
 
 #renderizados{
     grid-area: renderizados;
     margin: 1rem;
-    background-color: rgb(219, 250, 215);
+    background-color:  rgb(14, 80, 6); 
     text-align: center;
 }
 
 #titulo2{    
     width: fit-content;
-    background-color: rgb(225, 228, 41);
+    background-color: rgb(211, 214, 193);
+    color: rgb(36, 36, 35);
     margin: 10 auto;
-    text-align: center;}
+    text-align: center;
+}
 
 h4{
     font-size: 1.5rem;
@@ -401,9 +431,10 @@ h4{
 
 #contactanos{
     width: fit-content;
-    background-color: rgb(225, 228, 41);
     margin: 10 auto;
     text-align: center;
+    background-color: rgb(211, 214, 193);
+    color: rgb(36, 36, 35);
 }
 
 #contacto{
@@ -413,15 +444,17 @@ h4{
 }
 
 #formulario{
-    background-color: rgb(219, 250, 215); 
+    background-color:  rgb(14, 80, 6); 
     padding: 0.8rem;
     width: 450;
     font-family: 'Fira Sans Extra Condensed', sans-serif;    
     margin: 0.5cm;
 }
+
 #mapa{
-  margin: 0.5cm;
+    margin: 0.5cm;
 }
+
 .lineas{
     display: block;
     padding: 5px;
@@ -429,97 +462,9 @@ h4{
     text-align: justify;
 }
 
-@media screen and (max-width: 768px){
-    .conteiner{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 2fr 1fr; 
-        grid-template-areas: 
-        "top"
-        "nav"
-        "portadas"
-        "footerr"
-    }
-    .menu li {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    .portadas{
-        grid-area: portadas;
-        text-align: center;
-    } 
-    .imggrande{
-        height: 100px;
-        width: 100px;
-        margin: 5px;
-    }
-    .serv{
-        width: auto;
-        height: auto;
-        margin: 5px;;
-        gap: none;
-    }  
-    #planos{    
-        width: 93%;
-    }
-    #supervision{
-        width: 93%;
-    }
-    
-    #instalacionagua{
-        width: 80%;
-        padding: 0.5;
-    }
-    
-    #instalaciongas{
-        width: 85%;
-    }
-    
-    #renderizados{
-        width: 93%;
-    }
-    .imagenchica{
-        width: 350px;
-        height: 350px;
-        padding: 3rem;
-    }
-    .obras{
-        width: auto;
-        height: auto;
-        
-    }
-    #contacto{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #mapa{
-        margin-top: 2cm;
-    }
-    .imggrande:hover{
-        transform: scale(2,2);
-        transition: all 2s;
-    }
-}
-
 #darkModeButton {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  #darkModeButton:hover {
-    background-color: #555;
-  }
-  
-  #lightModeButton {
-    background-color: #fefcea;
-    color: #000;
+    background-color: #f8f4f4;
+    color: #080707;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
